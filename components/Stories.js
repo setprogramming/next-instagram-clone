@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Story from "./Story"
 
 export default function Stories() {
-    const minifaker = require('minifaker')
+    // const minifaker = require('minifaker')
 
     const [storyUsers, setSoryUsers] = useState([])
 
@@ -20,7 +20,7 @@ export default function Stories() {
     
     return (
         <div>
-            {storyUsers.map(user => (
+            {storyUsers.map((user) => (
                 <Story key={user.id} username={user.username} img={user.img} />
             ))}
         </div>
